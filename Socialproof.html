@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social-Proof</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/blogger-sans-bold-otf" type="text/css"/>
+    <script src="https://kit.fontawesome.com/f9319d3e8b.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #f7cfff7f; 
+        }
+        p:hover i{
+            transition: color 300ms;
+            transition-timing-function: ease-in;
+            color: rgb(230, 91, 252);
+        }
+        p:hover i:nth-child(1){
+            transition-delay: 100ms;
+        }
+        p:hover i:nth-child(2){
+            transition-delay: 200ms;
+        }
+        p:hover i:nth-child(3){
+            transition-delay: 300ms;
+        }
+        p:hover i:nth-child(4){
+            transition-delay: 400ms;
+        }
+        p:hover i:nth-child(5){
+            transition-delay: 500ms;
+        } 
+        img{
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 13px;
+        }
+        .one{
+            display: flex;
+           
+        }
+        .oneouter{
+            width: 348px;
+            background-color: #511f50;
+            height: 200px;
+            padding: 1.5em;
+            box-sizing: border-box;
+            border-radius: 10px;
+            color: white;
+        }
+        .oneouter .one p:nth-child(2){
+            color: #d469a8;
+        }
+        .one>div{
+            margin-left: 17px;
+            line-height: 0.6em;
+        }
+        span{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .testimonials{
+            margin-top: 7em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .testimonials>.oneouter:nth-child(2){
+            margin-top: 2em;
+        }
+        .testimonials>.oneouter:nth-child(3){
+            margin-top: 4em;
+        }
+        i{
+            color: rgba(255, 166, 0, 0.921);
+        }
+        .intro{
+            width: 25vw;
+            display: inline-block;
+            margin-left: 7em;
+            margin-top: 2em;
+        }
+        .intro>p{
+            color: rgba(0, 0, 0, 0.463);
+            font-weight: 500;
+        }
+        .rating{
+            /* float: right; */
+            margin-right: 10vw;
+            margin-top: 3em;
+            display: inline-block;
+            line-height: 2.5em;
+            color: #511d4f;
+            font-weight: bold;
+        }
+        .rating>p{
+            background-color: #f7cfff80;
+            width: 370px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .rating>p:nth-child(2){
+            margin-left: 4em;
+        }
+        .rating>p:nth-child(3){
+            margin-left: 8em;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            font-family: 'BloggerSansBold';
+            font-weight: bold;
+            font-size: 2.5em;
+            color: #511d4f;
+        }
+        .outflex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .oneouter:hover{
+            animation: hover 2s ease 0ms infinite alternate;
+        }
+        @keyframes hover{
+            0%{
+                transform: translateY(00px);
+            }
+            100%{
+                transform: translateY(40px);
+            }
+        }
+        @media (max-width:900px){
+            .outflex{
+                justify-content: left;
+            }
+
+            .intro{
+                margin: 0;
+                margin-left: 5em;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outflex">
+        <div class="intro">
+            <h1>10,000+ of our users love our products.</h1>
+            <p>We only provide great products combined with excellent customer service.See what our satisfied customers are saying about our services.</p>
+        </div>
+        <div class="rating">
+            <p><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><span> Rated 5 Stars in Reviews.</span></p>
+            <p><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><span> Rated 5 Stars in Report Guru.</span></p>
+            <p><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><i class="fa-solid fa-star fa-lg"></i><span> Rated 5 Stars in BestTech.</span></p>
+        </div>
+    </div>
+    
+    <div class="testimonials">
+        <div class="oneouter">
+            <div class="one">
+                <img src="one.png" alt="">
+                <div><p>Calvin Smith</p>
+                    <p>Verified Buyer</p></div>
+                </div>
+                <p>"Handles the most difficult customers with ease and manages to give them feedback in the most constructive manner."</p>
+        </div>
+        <div class="oneouter">
+            <div class="one">
+                <img src="two.jpg" alt="">
+                <div><p>Irene Roberts</p>
+                    <p>Verified Buyer</p></div>
+                </div>
+                <p>"Makes efforts to provide feedback in a timely manner and avoids becoming emotional when faced with objections."</p>
+        </div>
+        <div class="oneouter">
+            <div class="one">
+                <img src="girl_3.jpg" alt="">
+                <div><p>Chary mug</p>
+                    <p>Verified Buyer</p></div>
+                </div>
+                <p>"Takes part in redefining customer service process to meet the ever-changing needs of customers."</p>
+        </div>
+    </div>
+</body>
+</html>
